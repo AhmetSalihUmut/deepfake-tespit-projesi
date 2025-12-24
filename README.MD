@@ -13,5 +13,11 @@ Bu proje, Xception (CNN) ve LSTM (RNN) mimarilerini birleştirerek videoların s
 2. Gerekli kütüphaneleri kurun: `pip install -r requirements.txt`
 3. Uygulamayı başlatın: `python app.py`
 
+## 🧠 Model Dosyası
+GitHub dosya boyutu sınırı nedeniyle eğitilmiş model dosyasını ayrıca indirmeniz gerekmektedir:
+[📥 best_model.pth İndir (Google Drive)](BURAYA_KOPYALADIGIN_DRIVE_LINKINI_YAPISTIR)
+
+İndirdiğiniz dosyayı `checkpoints/` klasörünün içine atınız.
+
 ## 📊 Sonuçlar
 Projemiz, standart modellere göre %10 daha yüksek başarım göstermiştir.
