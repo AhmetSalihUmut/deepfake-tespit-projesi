@@ -8,6 +8,19 @@ Bu proje, Xception (CNN) ve LSTM (RNN) mimarilerini birleştirerek videoların s
 * **Gradio Arayüzü:** Kullanıcı dostu web arayüzü.
 * **Yüksek Başarım:** %99 AUC skoru.
 
+## 🧠 Model Dosyası İndirme
+GitHub dosya boyutu sınırı nedeniyle, eğitilmiş model dosyasını aşağıdaki linkten indirmeniz gerekmektedir:
+[📥 https://drive.google.com/drive/folders/1z5JwVeQOK0x-nkbBIXiZt80UXMkgklBd?usp=sharing (Google Drive)]
+
+**Kurulum:** İndirdiğiniz dosyayı projenin içindeki `checkpoints/` klasörüne atınız.
+
+## 📂 Veri Seti (Dataset)
+Projenin eğitimi için kullanılan veri seti dosya boyutu nedeniyle harici olarak sunulmuştur:
+
+[📥 https://drive.google.com/drive/folders/1YCESSsaBySAIWFSIXccEMui2ATw8VNAx?usp=sharing (Google Drive)]
+
+**Kurulum:** İndirdiğiniz klasörü projenin ana dizinine `data` adıyla atınız.
+
 ## 🛠️ Kurulum
 1. Dosyaları indirin.
 2. Gerekli kütüphaneleri kurun: `pip install -r requirements.txt`
