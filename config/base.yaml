@@ -1,0 +1,31 @@
+# config/base.yaml
+# BU, TÜM EKİBİN UYACAĞI "ANAYASA" DOSYASIDIR.
+# Google Drive'dan dağıtılacaktır.
+
+reproducibility:
+  seed: 42
+
+data:
+  image_size: 224
+  frames_per_video: 8
+  # data/lmdb ve data/metadata.json yolları src/dataset.py tarafından okunacak
+
+# --- BİLİMSEL ADİLLİK KURAL SETİ ---
+training:
+  # KURAL 1: Bu, en zayıf cihaz (senin RTX 3050'n) ViT ile test edilip
+  # çökmediği maksimum değere ayarlanacak (örn: 4, 8, 16).
+  batch_size: 2 # (Bu değer Sprint 0'da test edilecek GEÇİCİ bir sayıdır)
+  
+  # KURAL 2: Herkes için sabit
+  epoch_count: 20
+  learning_rate: 0.0001
+  optimizer: Adam
+
+  # KURAL 3: Herkes için %100 aynı augmentasyon
+  augmentation_pipeline:
+    RandomHorizontalFlip: 0.5
+    ColorJitter:
+      brightness: 0.2
+      contrast: 0.2
+      saturation: 0.2
+      hue: 0.1
